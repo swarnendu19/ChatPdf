@@ -14,4 +14,4 @@ function MaxWidthWrapper({
   )
 }
 
-export default MaxWidthWrapper
+export default MaxWidthWrapper;
