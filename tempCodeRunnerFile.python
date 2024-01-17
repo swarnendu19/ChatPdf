@@ -1,0 +1,27 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+
+# Parameters for the standard normal distribution
+mu = 0
+sigma = 1
+
+# Generate x values from -3 to 3 (representing standard deviations)
+x = np.linspace(-3, 3, 1000)
+
+# Calculate the probability density function for each x
+pdf = norm.pdf(x, mu, sigma)
+
+# Plot the normal distribution
+plt.plot(x, pdf, label='Normal Distribution')
+
+# Add labels and title
+plt.xlabel('Standard Deviations from Mean')
+plt.ylabel('Probability Density')
+plt.title('Standard Normal Distribution')
+
+# Add a legend
+plt.legend()
+
+# Show the plot
+plt.show()
